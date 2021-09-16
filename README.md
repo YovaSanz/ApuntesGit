@@ -39,6 +39,8 @@
     Reset hard: git reset --hard *Hahs                      Recupera el commit, indicado en el comando, como último modificando el proyecto con las características de dicho commit.
 
 
+
+
 # Comandos para Ramas en Git
 
 ## Ver Ramas
@@ -53,3 +55,35 @@
 ## Unir Ramas
     <!--Debemos estan en la rama donde queramos unir todo-->
     git merge pruebas
+
+## Eliminar Rama
+    git branch pruebas -D
+
+
+
+
+# Comandos para GitHub
+
+## Clonar un Repocitorio
+    git clone <Link del repositorio>
+
+## Subir Repisitorio a GitHub
+    git remote add origin <link del repositorio>
+    git remote -v
+    git push -u origin master 
+
+## comandos que da github al crear un nuevo repositorio
+### o crea un nuevo repositorio en la línea de comandos
+    echo "# ApuntesGit" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git branch -M main                                                              <!-- "-M" lo convierte en master (puede ser no necesario)-->
+    git remote add origin https://github.com/YovaSanz/ApuntesGit.git
+    git push -u origin main
+
+### o enviar un repositorio existente desde la línea de comandos
+    git remote add origin https://github.com/YovaSanz/ApuntesGit.git
+    git branch -M main                                                              <!-- "-M" lo convierte en master (puede ser no necesario)-->
+    git push -u origin main
+
