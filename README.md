@@ -49,3 +49,7 @@
 
 ## Cambiar Rama
     git checkout pruebas
+
+## Unir Ramas
+    <!--Debemos estan en la rama donde queramos unir todo-->
+    git merge pruebas
